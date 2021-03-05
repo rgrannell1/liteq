@@ -5,12 +5,12 @@ import signale from 'signale'
 
 import { Printer } from './printer.js'
 
-interface litqArgs {
+interface liteqArgs {
   path: string,
   query: string
 }
 
-export const litq = async (args: litqArgs) => {
+export const liteq = async (args: liteqArgs) => {
   const conn = await open({
     filename: args.path,
     driver: sqlite3.Database

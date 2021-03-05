@@ -1,22 +1,23 @@
+#!/usr/bin/node
 
 import docopt from 'docopt'
-import { litq } from './app.js'
+import { liteq } from './app.js'
 
 const docs = `
 Name:
-  litq — extract SQLite as JSON.
+  liteq — extract SQLite as JSON.
 
 Usage:
-  litq [--] <path> <query>
+  liteq [--] <path> <query>
 
 Description:
-  litq retrieves sqlite results as JSON
+  liteq retrieves sqlite results as JSON
 `
 
 const main = async () => {
   const args = docopt.docopt(docs, {})
 
-  await litq({
+  await liteq({
     path: args['<path>'],
     query: args['<query>']
   })
