@@ -2,8 +2,11 @@
   "name": "liteq",
   "type": "module",
   "version": "1.0.0",
-  "description": "",
+  "description": "liteq executes SQL queries and outputs JSON",
   "main": "index.js",
+  "bin": {
+    "liteq": "dist/src/cli.js"
+  },
   "scripts": {
     "start": "node dist/cli.js data/castle.db.sqlite 'SELECT id FROM address'",
     "tsc": "tsc",
