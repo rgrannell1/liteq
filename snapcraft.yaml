@@ -1,0 +1,22 @@
+name: liteq
+grade: stable
+version: v0.2.0
+base: core20
+
+license: MIT
+
+summary: Liteq executes SQL queries and captures the results as JSON.
+
+description: >
+  Liteq executes SQL queries and captures the results as JSON.
+confinement: strict
+
+apps:
+  liteq:
+    command: bin/liteq
+
+parts:
+  liteq:
+    source: .
+    plugin: npm
+    npm-node-version: 15.0.1

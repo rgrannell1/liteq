@@ -14,10 +14,34 @@ liteq castle.db.sqlite 'SELECT id FROM address'
 ### Files
 
 ```
+.github/workflows/
+  ci.yaml              github workflow
+src/
+  app.ts               the core application
+  cli.ts               the CLI interface
+  printer.ts           print streaming JSON
 
+test/
+  printer.test.ts      test printer always produces valid JSON
+snapcraft.yaml         snapcraft file
+tsconfig.json          typescript configuration
 ```
 
 ### Installation
+
+#### Snapcraft
+
+```sh
+snapcraft
+sudo snap remove liteq
+sudo snap install liteq_v0.1.0_amd64.snap --dangerous --devmode
+```
+
+#### Npm
+
+```sh
+npm install --global github:rgrannell1/liteq
+```
 
 ### Tests
 
