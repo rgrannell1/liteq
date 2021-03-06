@@ -40,7 +40,7 @@ sudo snap install liteq_v0.1.0_amd64.snap --dangerous --devmode
 #### Npm
 
 ```sh
-npm install --global github:rgrannell1/liteq
+npm install --global @rgrannell/liteq
 ```
 
 ### Tests
