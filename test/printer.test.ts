@@ -1,6 +1,6 @@
 
 import tap from 'tap'
-import * as revexp from 'revexp'
+import * as revexp from '@rgrannell/revexp'
 
 import {Printer} from '../src/printer.js'
 

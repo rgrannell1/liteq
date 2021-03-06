@@ -16,6 +16,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@rgrannell/revexp": "^1.0.0",
     "@types/docopt": "^0.6.31",
     "@types/signale": "^1.4.1",
     "@types/sqlite3": "^3.1.7",
@@ -28,7 +29,6 @@
   },
   "devDependencies": {
     "tap": "^14.11.0",
-    "revexp": "github:rgrannell1/revexp",
     "typescript": "^4.2.3"
   }
 }
