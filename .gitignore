@@ -2,3 +2,4 @@ node_modules/
 data/
 dist/
 .nyc_output/
+yarn-error.log
